@@ -1,37 +1,47 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# 1. Common IDE #
+### 1-1 IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
 
-### STS ###
+### 1-2 VSCode ###
+.vscode/
+
+### 1-3 STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# 2. Default #
+HELP.md
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
+# 3. Custom #
+### 3-1 Back Major Ignore ###
+/data/
+/target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+### 3-2 Front Major Ignore ###
+.DS_Store
+node_modules/
+package-lock.json
 /dist/
-/nbdist/
-/.nb-gradle/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
 
-### VS Code ###
-.vscode/
+### 3-3 Gradle Ignore ###
+.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
