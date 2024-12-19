@@ -1,5 +1,5 @@
 # fastweb
-- 빠른 스프링 프로젝트 생성을 위해~
+- 나만의 Rest Web 프로젝트 ~
 
 ## 구조
 - Java 17 (Azul Zulu)
